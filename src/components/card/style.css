@@ -1,0 +1,42 @@
+.card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  max-width: 320px;
+  border: 1px solid #e0e0e0;
+  overflow: hidden; /* Сүрөттүн жогорку бурчтары да тегеректелиши үчүн */
+  font-family: Arial, sans-serif;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Чычканды үстүнө алып барганда эффект */
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.card-image {
+  width: 100%;
+  height: 180px;
+  object-fit: cover; /* Сүрөт созулуп кетпей, туура сыгылышы үчүн */
+  display: block;
+}
+
+.card-body {
+  padding: 16px;
+}
+
+.card-title {
+  margin: 0 0 8px 0;
+  font-size: 20px;
+  font-weight: 600;
+  color: #1a1a1a;
+}
+
+.card-text {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #666666;
+}
+
